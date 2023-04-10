@@ -7,7 +7,7 @@ import { v4 } from 'uuid';
 const port = 3001;
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello toto');
+  res.send('Hello there');
 });
 
 app.get('/api', (req, res) => {
