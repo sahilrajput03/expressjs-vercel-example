@@ -22,8 +22,8 @@ app.get('/api/item/:slug', (req, res) => {
   res.end(`Item: ${slug}`);
 });
 
-app.listen(port, function () {
-  console.log(`App is listening on port ${port} !`);
-});
+// app.listen(port, function () {
+//   console.log(`App is listening on port ${port} !`);
+// });
 
 module.exports = app;
