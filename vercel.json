@@ -11,8 +11,5 @@
 			"src": "/(.*)",
 			"dest": "/"
 		}
-	],
-	"outputDirectory": "dist",
-	"buildCommand": "npm run build",
-	"devCommand": "node ./dist/app.js"
+	]
 }
