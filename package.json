@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build":"tsc --build",
+    "start:prod": "node ./dist/app.js",
     "start": "npm run start:dev",
     "start:dev": "ts-node-dev --respawn --transpile-only --clear src/app.ts",
     "start:debug": "ts-node-dev --inspect --respawn --transpile-only --clear src/app.ts",
