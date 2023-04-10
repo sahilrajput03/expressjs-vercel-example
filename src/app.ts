@@ -4,8 +4,6 @@ import type { Application, Request, Response } from 'express';
 const app: Application = express();
 import { v4 } from 'uuid';
 
-const port = 3001;
-
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello there user');
 });
@@ -20,10 +18,6 @@ app.get('/api', (req, res) => {
 app.get('/api/item/:slug', (req, res) => {
   const { slug } = req.params;
   res.end(`Item: ${slug}`);
-});
-
-app.listen(port, function () {
-  console.log(`App is listening on port ${port} !`);
 });
 
 module.exports = app;
