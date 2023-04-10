@@ -1,4 +1,6 @@
 {
-    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
-    "devCommand": "npm start"
-  }
+	"rewrites": [{"source": "/api/(.*)", "destination": "/api"}],
+	"outputDirectory": "dist",
+	"buildCommand": "npm run build",
+	"devCommand": "node app.js"
+}
