@@ -4,7 +4,8 @@
 	"scripts": {
 		"build": "tsc --build",
 		"start:prod": "node ./dist/app.js",
-		"start": "npm run start:dev",
+		"start": "node ./src/app.js",
+		"start1": "npm run start:dev",
 		"start:dev": "ts-node-dev --respawn --transpile-only --clear src/app.ts",
 		"start:debug": "ts-node-dev --inspect --respawn --transpile-only --clear src/app.ts",
 		"test": "echo \"Error: no test specified\" && exit 1"
